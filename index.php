@@ -11,7 +11,7 @@ $conn = new mysqli($host, $username, $password, $dbname);
 if($conn->connect_error){
 	die("Connection failed: $conn->connect_error");
 }
-echo "YOU HAVE CONNECTED SUCCESFULLY";
+echo "CONNECTED SUCCESFULLY";
 
 $table = "test_table";
 $stmt = $conn->prepare("SELECT * FROM $table");
